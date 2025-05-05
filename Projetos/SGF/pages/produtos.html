@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Financeira - Produtos Disponíveis</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/icons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2><i class="fas fa-chart-line"></i> SGF</h2>
+        </div>
+        <div class="user-info">
+            <div class="user-avatar"><i class="fas fa-user"></i></div>
+            <div class="user-name">Vaninha</div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li class="active"><a href="produtos.html"><i class="fas fa-box"></i> Produtos Disponíveis</a></li>
+                <li><a href="valores.html"><i class="fas fa-money-bill-wave"></i> Gestão de Valores</a></li>
+                <li><a href="maquinas.html"><i class="fas fa-credit-card"></i> Máquinas de Cobrança</a></li>
+                <li><a href="lucros.html"><i class="fas fa-chart-pie"></i> Ganhos e Lucros</a></li>
+            </ul>
+        </nav>
+        <div class="logout">
+            <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Sair</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="header-content">
+                <h1><i class="fas fa-box"></i> Produtos Disponíveis</h1>
+                <div class="date-display" id="currentDate"><i class="far fa-calendar-alt"></i> Data: 00/00/0000</div>
+            </div>
+            <div class="user-actions">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="settings">
+                    <i class="fas fa-cog"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-container">
+            <div class="actions-bar">
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar produtos..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-add"><i class="fas fa-plus"></i> Novo Produto</button>
+                    <button class="btn-filter"><i class="fas fa-filter"></i> Filtrar</button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Produto A</h3>
+                        <p class="product-description">Descrição do produto A com detalhes importantes.</p>
+                        <div class="product-details">
+                            <span class="product-price">R$ 1.250,00</span>
+                            <span class="product-stock">Estoque: 25</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-edit"><i class="icon-edit"></i></button>
+                        <button class="btn-delete"><i class="icon-delete"></i></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Produto B</h3>
+                        <p class="product-description">Descrição do produto B com detalhes importantes.</p>
+                        <div class="product-details">
+                            <span class="product-price">R$ 780,00</span>
+                            <span class="product-stock">Estoque: 18</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-edit"><i class="icon-edit"></i></button>
+                        <button class="btn-delete"><i class="icon-delete"></i></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Produto C</h3>
+                        <p class="product-description">Descrição do produto C com detalhes importantes.</p>
+                        <div class="product-details">
+                            <span class="product-price">R$ 950,00</span>
+                            <span class="product-stock">Estoque: 12</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-edit"><i class="icon-edit"></i></button>
+                        <button class="btn-delete"><i class="icon-delete"></i></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Produto D</h3>
+                        <p class="product-description">Descrição do produto D com detalhes importantes.</p>
+                        <div class="product-details">
+                            <span class="product-price">R$ 1.500,00</span>
+                            <span class="product-stock">Estoque: 8</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-edit"><i class="icon-edit"></i></button>
+                        <button class="btn-delete"><i class="icon-delete"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="btn-page"><i class="icon-prev"></i></button>
+                <button class="btn-page active">1</button>
+                <button class="btn-page">2</button>
+                <button class="btn-page">3</button>
+                <button class="btn-page"><i class="icon-next"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Adicionar Novo Produto</h2>
+                <button class="btn-close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="productForm">
+                    <div class="form-group">
+                        <label for="productName">Nome do Produto:</label>
+                        <input type="text" id="productName" name="productName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productDescription">Descrição:</label>
+                        <textarea id="productDescription" name="productDescription" rows="3" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="productPrice">Preço (R$):</label>
+                            <input type="number" id="productPrice" name="productPrice" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="productStock">Estoque:</label>
+                            <input type="number" id="productStock" name="productStock" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="productImage">Imagem:</label>
+                        <input type="file" id="productImage" name="productImage">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel">Cancelar</button>
+                <button class="btn-save">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/date.js"></script>
+    <script src="../js/produtos.js"></script>
+    <script src="../js/page-transitions-sub.js"></script>
+</body>
+</html>

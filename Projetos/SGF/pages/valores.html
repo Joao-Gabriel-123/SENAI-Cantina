@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Financeira - Gestão de Valores</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/valores.css">
+    <link rel="stylesheet" href="../css/icons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>SGF</h2>
+        </div>
+        <div class="user-info">
+            <div class="user-avatar">VA</div>
+            <div class="user-name">Vaninha</div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../dashboard.html"><i class="icon-dashboard"></i> Dashboard</a></li>
+                <li><a href="produtos.html"><i class="icon-products"></i> Produtos Disponíveis</a></li>
+                <li class="active"><a href="valores.html"><i class="icon-values"></i> Gestão de Valores</a></li>
+                <li><a href="maquinas.html"><i class="icon-machines"></i> Máquinas de Cobrança</a></li>
+                <li><a href="lucros.html"><i class="icon-profits"></i> Ganhos e Lucros</a></li>
+            </ul>
+        </nav>
+        <div class="logout">
+            <a href="#" id="logoutBtn"><i class="icon-logout"></i> Sair</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="header-content">
+                <h1>Gestão de Valores</h1>
+                <div class="date-display" id="currentDate">Data: 00/00/0000</div>
+            </div>
+            <div class="user-actions">
+                <div class="notifications">
+                    <i class="icon-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="settings">
+                    <i class="icon-settings"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-container">
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <div class="card-icon">
+                        <i class="icon-money-in"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Entradas</h3>
+                        <p class="value positive">R$ 35.750,00</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon">
+                        <i class="icon-money-out"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Saídas</h3>
+                        <p class="value negative">R$ 12.970,00</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon">
+                        <i class="icon-balance"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Saldo</h3>
+                        <p class="value">R$ 22.780,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions-bar">
+                <div class="date-filter">
+                    <label for="dateRange">Período:</label>
+                    <select id="dateRange" class="select-input">
+                        <option value="today">Hoje</option>
+                        <option value="week">Última Semana</option>
+                        <option value="month" selected>Último Mês</option>
+                        <option value="quarter">Último Trimestre</option>
+                        <option value="year">Último Ano</option>
+                        <option value="custom">Personalizado</option>
+                    </select>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-add"><i class="icon-add"></i> Nova Transação</button>
+                    <button class="btn-export"><i class="icon-export"></i> Exportar</button>
+                </div>
+            </div>
+
+            <div class="transactions-container">
+                <div class="transactions-header">
+                    <h3>Transações Recentes</h3>
+                    <div class="filter-tabs">
+                        <button class="tab active">Todas</button>
+                        <button class="tab">Entradas</button>
+                        <button class="tab">Saídas</button>
+                    </div>
+                </div>
+                
+                <div class="transactions-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Data</th>
+                                <th>Descrição</th>
+                                <th>Categoria</th>
+                                <th>Valor</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1234</td>
+                                <td>05/04/2025</td>
+                                <td>Venda Produto A</td>
+                                <td>Vendas</td>
+                                <td class="value positive">R$ 1.250,00</td>
+                                <td><span class="status completed">Concluído</span></td>
+                                <td class="actions">
+                                    <button class="btn-view"><i class="icon-view"></i></button>
+                                    <button class="btn-edit"><i class="icon-edit"></i></button>
+                                    <button class="btn-delete"><i class="icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1233</td>
+                                <td>03/04/2025</td>
+                                <td>Venda Produto C</td>
+                                <td>Vendas</td>
+                                <td class="value positive">R$ 780,00</td>
+                                <td><span class="status completed">Concluído</span></td>
+                                <td class="actions">
+                                    <button class="btn-view"><i class="icon-view"></i></button>
+                                    <button class="btn-edit"><i class="icon-edit"></i></button>
+                                    <button class="btn-delete"><i class="icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#567</td>
+                                <td>04/04/2025</td>
+                                <td>Manutenção Máquina 3</td>
+                                <td>Despesas</td>
+                                <td class="value negative">R$ 350,00</td>
+                                <td><span class="status completed">Concluído</span></td>
+                                <td class="actions">
+                                    <button class="btn-view"><i class="icon-view"></i></button>
+                                    <button class="btn-edit"><i class="icon-edit"></i></button>
+                                    <button class="btn-delete"><i class="icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1232</td>
+                                <td>01/04/2025</td>
+                                <td>Venda Produto B</td>
+                                <td>Vendas</td>
+                                <td class="value positive">R$ 950,00</td>
+                                <td><span class="status pending">Pendente</span></td>
+                                <td class="actions">
+                                    <button class="btn-view"><i class="icon-view"></i></button>
+                                    <button class="btn-edit"><i class="icon-edit"></i></button>
+                                    <button class="btn-delete"><i class="icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#566</td>
+                                <td>30/03/2025</td>
+                                <td>Compra de Estoque</td>
+                                <td>Despesas</td>
+                                <td class="value negative">R$ 2.500,00</td>
+                                <td><span class="status completed">Concluído</span></td>
+                                <td class="actions">
+                                    <button class="btn-view"><i class="icon-view"></i></button>
+                                    <button class="btn-edit"><i class="icon-edit"></i></button>
+                                    <button class="btn-delete"><i class="icon-delete"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination">
+                    <button class="btn-page"><i class="icon-prev"></i></button>
+                    <button class="btn-page active">1</button>
+                    <button class="btn-page">2</button>
+                    <button class="btn-page">3</button>
+                    <button class="btn-page"><i class="icon-next"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="transactionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Nova Transação</h2>
+                <button class="btn-close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="transactionForm">
+                    <div class="form-group">
+                        <label for="transactionType">Tipo de Transação:</label>
+                        <select id="transactionType" name="transactionType" required>
+                            <option value="income">Entrada</option>
+                            <option value="expense">Saída</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="transactionDescription">Descrição:</label>
+                        <input type="text" id="transactionDescription" name="transactionDescription" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="transactionCategory">Categoria:</label>
+                            <select id="transactionCategory" name="transactionCategory" required>
+                                <option value="sales">Vendas</option>
+                                <option value="services">Serviços</option>
+                                <option value="expenses">Despesas</option>
+                                <option value="maintenance">Manutenção</option>
+                                <option value="other">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="transactionValue">Valor (R$):</label>
+                            <input type="number" id="transactionValue" name="transactionValue" step="0.01" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="transactionDate">Data:</label>
+                        <input type="date" id="transactionDate" name="transactionDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="transactionNotes">Observações:</label>
+                        <textarea id="transactionNotes" name="transactionNotes" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel">Cancelar</button>
+                <button class="btn-save">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/date.js"></script>
+    <script src="../js/valores.js"></script>
+    <script src="../js/page-transitions-sub.js"></script>
+</body>
+</html>

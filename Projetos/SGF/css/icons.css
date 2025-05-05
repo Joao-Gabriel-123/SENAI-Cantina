@@ -1,0 +1,116 @@
+/* Ícones para o sistema de gestão financeira */
+
+/* Definição de ícones usando Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Estilos para ícones nos botões */
+.btn-login i,
+.btn-add i,
+.btn-filter i,
+.btn-export i,
+.btn-details i,
+.btn-maintenance i,
+.btn-edit i,
+.btn-delete i,
+.btn-view i,
+.btn-download i,
+.btn-fullscreen i,
+.btn-generate-report i,
+.btn-schedule-report i,
+.btn-save i,
+.btn-cancel i,
+.btn-generate i,
+.btn-close i,
+.btn-search i,
+.btn-apply i {
+    margin-right: 8px;
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+}
+
+/* Animação de ícones nos botões */
+.btn-login:hover i,
+.btn-add:hover i,
+.btn-filter:hover i,
+.btn-export:hover i,
+.btn-details:hover i,
+.btn-maintenance:hover i,
+.btn-edit:hover i,
+.btn-delete:hover i,
+.btn-view:hover i,
+.btn-download:hover i,
+.btn-fullscreen:hover i,
+.btn-generate-report:hover i,
+.btn-schedule-report:hover i,
+.btn-save:hover i,
+.btn-cancel:hover i,
+.btn-generate:hover i,
+.btn-close:hover i,
+.btn-search:hover i,
+.btn-apply:hover i {
+    transform: scale(1.2);
+}
+
+/* Ícones para o menu lateral */
+.menu a i {
+    font-size: 1.2em;
+    width: 24px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* Ícones para cards e elementos de UI */
+.card-icon i,
+.user-avatar i,
+.notifications i,
+.settings i,
+.badge i,
+.logout i,
+.btn-page i,
+.trend i {
+    font-size: 1.2em;
+}
+
+/* Ícones específicos para status */
+.status.completed i,
+.status.active i {
+    color: var(--success);
+}
+
+.status.pending i {
+    color: var(--warning);
+}
+
+.status.cancelled i,
+.status.maintenance i {
+    color: var(--danger);
+}
+
+/* Animação de pulso para notificações */
+.notifications .badge {
+    animation: pulse 2s infinite;
+}
+
+/* Ícones para cabeçalhos de seção */
+.header-content h1 i {
+    margin-right: 10px;
+    color: var(--primary-blue);
+}
+
+/* Ícones para campos de formulário */
+.form-group label i {
+    margin-right: 5px;
+    color: var(--dark-blue);
+}
+
+/* Ícones para tabelas */
+th i {
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+/* Ícones para gráficos */
+.chart-header h3 i {
+    margin-right: 8px;
+    color: var(--primary-blue);
+}

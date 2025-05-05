@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Financeira - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2><i class="fas fa-chart-line"></i> SGF</h2>
+        </div>
+        <div class="user-info">
+            <div class="user-avatar"><i class="fas fa-user"></i></div>
+            <div class="user-name">Vaninha</div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="active"><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="pages/produtos.html"><i class="fas fa-box"></i> Produtos Disponíveis</a></li>
+                <li><a href="pages/valores.html"><i class="fas fa-money-bill-wave"></i> Gestão de Valores</a></li>
+                <li><a href="pages/maquinas.html"><i class="fas fa-credit-card"></i> Máquinas de Cobrança</a></li>
+                <li><a href="pages/lucros.html"><i class="fas fa-chart-pie"></i> Ganhos e Lucros</a></li>
+            </ul>
+        </nav>
+        <div class="logout">
+            <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Sair</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="header-content">
+                <h1><i class="fas fa-tachometer-alt"></i> Dashboard</h1>
+                <div class="date-display" id="currentDate"><i class="far fa-calendar-alt"></i> Data: 00/00/0000</div>
+            </div>
+            <div class="user-actions">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="settings">
+                    <i class="fas fa-cog"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <div class="dashboard-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Produtos</h3>
+                        <p>15 produtos ativos</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Valores</h3>
+                        <p>R$ 25.450,00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Máquinas</h3>
+                        <p>8 máquinas ativas</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Lucros</h3>
+                        <p>R$ 12.780,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-charts">
+                <div class="chart-container">
+                    <h3><i class="fas fa-chart-line"></i> Resumo Financeiro</h3>
+                    <div class="chart-placeholder">
+                        <!-- Gráfico será renderizado via JavaScript -->
+                        <div class="chart-demo"></div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3><i class="fas fa-exchange-alt"></i> Transações Recentes</h3>
+                    <div class="transactions-list">
+                        <div class="transaction">
+                            <div class="transaction-info">
+                                <h4><i class="fas fa-shopping-cart"></i> Venda #1234</h4>
+                                <p><i class="fas fa-box"></i> Produto A - 05/04/2025</p>
+                            </div>
+                            <div class="transaction-value positive">
+                                <i class="fas fa-plus-circle"></i> R$ 1.250,00
+                            </div>
+                        </div>
+                        <div class="transaction">
+                            <div class="transaction-info">
+                                <h4><i class="fas fa-tools"></i> Manutenção #567</h4>
+                                <p><i class="fas fa-credit-card"></i> Máquina 3 - 04/04/2025</p>
+                            </div>
+                            <div class="transaction-value negative">
+                                <i class="fas fa-minus-circle"></i> R$ 350,00
+                            </div>
+                        </div>
+                        <div class="transaction">
+                            <div class="transaction-info">
+                                <h4><i class="fas fa-shopping-cart"></i> Venda #1233</h4>
+                                <p><i class="fas fa-box"></i> Produto C - 03/04/2025</p>
+                            </div>
+                            <div class="transaction-value positive">
+                                <i class="fas fa-plus-circle"></i> R$ 780,00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/date.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/page-transitions.js"></script>
+</body>
+</html>
