@@ -14,7 +14,7 @@ function CalcularLucro() {
     let preco_custo = document.getElementById('preco-custo').value
     let preco_venda = document.getElementById('preco-venda').value
 
-    if (preco_custo != '' && preco_venda != '') {
+    if (preco_custo != '' && preco_venda != '' && !(isNaN(preco_custo)) && !(isNaN(preco_venda))) {
 
         if (preco_custo == preco_venda) {
             document.getElementById('lucro').value = `0%`
