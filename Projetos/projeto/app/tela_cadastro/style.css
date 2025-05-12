@@ -97,6 +97,11 @@ label {
     margin-bottom: 5px;
 }
 
+.opcao{
+    display: inline-flex;
+    align-items: flex-start;
+}
+
 h1 {
     color: rgb(255, 255, 255);
 }
@@ -110,7 +115,6 @@ input {
     border-radius: 5px;
     margin: 5px 5px;
 }
-
 
 .btn-seta{
     margin-left: 10px;
