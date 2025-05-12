@@ -14,11 +14,11 @@ function CalcularLucro() {
     let preco_custo = document.getElementById('preco-custo').value
     let preco_venda = document.getElementById('preco-venda').value
 
-    if (preco_custo != '' || preco_venda != '') {
+    if (preco_custo != '' && preco_venda != '') {
 
         if (preco_custo == preco_venda) {
             document.getElementById('lucro').value = `0%`
-
+            return
         }
 
         if (preco_venda > preco_custo) {
@@ -33,6 +33,9 @@ function CalcularLucro() {
             document.getElementById('lucro').value = `-${lucro}%`
 
         }
+
+    } else {
+        document.getElementById('lucro').value = ``
 
     }
 
