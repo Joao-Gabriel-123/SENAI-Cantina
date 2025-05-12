@@ -14,10 +14,12 @@ function CalcularLucro() {
     let preco_custo = document.getElementById('preco-custo').value
     let preco_venda = document.getElementById('preco-venda').value
 
-    if (preco_custo == preco_venda) {
-        document.getElementById('lucro').value = `0%`
+    if (preco_custo != '' || preco_venda != '') {
 
-    } else if (preco_custo != '' || preco_venda != '') {
+        if (preco_custo == preco_venda) {
+            document.getElementById('lucro').value = `0%`
+
+        }
 
         if (preco_venda > preco_custo) {
             lucro = (preco_venda / preco_custo) - 1
@@ -36,7 +38,7 @@ function CalcularLucro() {
 
 }
 
-function CadastrarProduto(){
+function CadastrarProduto() {
     window.location.reload()
 
 }
