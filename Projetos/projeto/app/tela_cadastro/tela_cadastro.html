@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d8978e3739.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm nav-senai">
+
+        <a class="navbar-brand img-senai" href="home.html"><img src="../../img/senai.png" alt="SENAI"></a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="../pagina_principal/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a onclick="AbrirMenu()" class="nav-link img-perfil"></a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="menu" id="menu">
+        <ul class="lista_menu">
+            <li><a href="">Você</a></li>
+            <li><a href="">Configurações</a></li>
+            <li><a href="../home/home.html">Logoff</a></li>
+        </ul>
+    </div>
+
+    <main>
+
+        <h1> Cadastro de Produtos</h1>
+
+        <div class="categoria-container">
+            <h4 class="categoria-titulo">Categoria</h4>
+            <label for="salgado">Salgado</label>
+            <input name="categoria" id="salgado" type="radio">
+            <label for="bebida">Bebida</label>
+            <input name="categoria" id="bebida" type="radio"> <br>
+            <label for="doce">Doce</label>
+            <input name="categoria" id="doce" type="radio">
+            <label for="sorvete">Sorvete</label>
+            <input name="categoria" id="sorvete" type="radio">
+        </div>
+
+        <input type="text" placeholder="Nome">
+
+        <input type="text" placeholder="Descrição">
+
+        <div class="precos">
+            <input id="preco-custo" type="number" placeholder="Preço Custo">
+
+            <input id="preco-venda" type="number" placeholder="Preço Venda">
+
+            <button onclick="CalcularLucro()" class="btn-seta">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <input type="text" placeholder="Código de barras" class="codigo">
+
+        <input type="text" placeholder="Lucro (%)" class="lucro" id="lucro"> <br>
+
+        <button onclick="CadastrarProduto()" class="btn-cadastrar">Cadastrar produto</button>
+
+    </main>
+
+    <footer class="rodape">
+
+        © Copyright 2025 Cantina SENAI
+
+    </footer>
+
+</body>
+
+</html>
