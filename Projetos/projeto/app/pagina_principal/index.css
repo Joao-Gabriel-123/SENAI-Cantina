@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-senai{
+    background-color: rgb(147, 0, 0);
+}
+
+.nav-senai li{
+    display: flex;
+    align-items: center;
+}
+
+.nav-senai li a{
+    color: white;
+    margin-left: 10px;
+}
+
+.nav-senai li a:hover{
+    background-color: white;
+    color: rgb(147, 0, 0);
+    border-radius: 10px;
+}
+
+.img-senai img{
+    max-width: 150px;
+}
+
+.img-perfil{
+    width: 50px;
+    height: 50px;
+    background-image: url(../../img/perfil.png);
+    background-size: cover;
+}
+
+.rodape{
+    background-color: rgb(147, 0, 0);
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.principal{
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.menu{
+    position: absolute;
+    background-color: rgb(218, 218, 218);
+    padding: 20px;
+    border-radius: 20px 0px 20px 20px;
+    text-align: center;
+    right: 0%;
+    visibility:hidden;
+    z-index: 2;
+}
+
+.lista_menu{
+    list-style: none;
+}
+
+.lista_menu li{
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.lista_menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.linha_salgado{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cartão_salgado{
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 300px;
+    width: 400px;
+}
+
+.img-salgado{
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+}
+
+.btn_salgado{
+    width: 60%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 1px solid;
+}
+
+.btn_salgado:hover{
+    color: red;
+    border: red 1px solid;
+}
+

@@ -1,0 +1,95 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../../img/bg.jpg);
+    background-size: cover;
+}
+
+.amarelo{
+    color: rgb(255, 255, 80);
+    text-shadow: red 1px 1px 1px;
+}
+
+.nav-senai{
+    background-color: rgb(147, 0, 0);
+}
+
+.nav-senai li a{
+    color: white;
+    margin-left: 10px;
+}
+
+.nav-senai li a:hover{
+    background-color: white;
+    color: rgb(147, 0, 0);
+    border-radius: 10px;
+}
+
+.img-senai img{
+    max-width: 150px;
+}
+
+.img-cantina img{
+    max-width: 300px;
+}
+
+.home-botoes ul{
+    margin-top: 10%;
+    list-style: none;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+}
+
+p{
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home-botoes a{
+    background-color: rgb(221, 0, 0);
+    padding: 3% 5%;
+    height: 100px;
+    border-radius: 15px;
+    color: white;
+}
+
+.home-botoes a:hover{
+    background-color: white;
+    color: rgb(221, 0, 0);
+    text-decoration: none;
+    box-shadow: 0px 0px 10px red;
+}
+
+.img-cantina img{
+    border-radius: 200px;
+}
+
+.rodape{
+    background-color: rgb(147, 0, 0);
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.texto-principal{
+    margin-top: 7%;
+}
+
+.img-cantina{
+    margin-top: 7%;
+}
+
+.principal{
+    position: relative;
+    margin-bottom: 100px;
+}
