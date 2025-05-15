@@ -107,7 +107,7 @@ body{
 
 th{
     margin: 0px auto;
-    border: 1px solid black; 
+    border: 1.5px solid black; 
     background-color: rgb(197, 0, 0);
     color: white;
 }
@@ -118,7 +118,7 @@ th:hover{
 
 td{
     margin: 0px auto;
-    border: 1px solid black;
+    border: 1.5px solid black;
 }
 
 td:hover{

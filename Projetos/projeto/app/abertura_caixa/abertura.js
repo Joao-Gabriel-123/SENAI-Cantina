@@ -30,8 +30,13 @@ function RegistrarMovimentacao() {
 
     if (numero_itens > 1) {
         if (document.getElementById(`td${numero_itens - 1}${5}`).innerHTML == status) {
-            alert(`O status anterior já é ${status}`)
-            return
+            if (status == 'Abertura') {
+                alert(`O caixa já está aberto!`)
+                return
+            } else {
+                alert('O caixa já está fechado!')
+                return
+            }
         }
     }
 
