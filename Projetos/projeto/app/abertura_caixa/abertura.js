@@ -14,7 +14,7 @@ let numero_itens = 1
 
 function RegistrarMovimentacao() {
 
-    if (document.getElementById('input-data').value == '' || document.getElementById('input-nomefuncionario').value == '' || document.getElementById('input-descricao').value == '' || document.getElementById('input-quantia').value == '' || document.getElementById('status-caixa').value == '') {
+    if (document.getElementById('input-data').value == '' || document.getElementById('input-nomefuncionario').value == '' || document.getElementById('input-descricao').value == '' || document.getElementById('input-valor').value == '' || document.getElementById('status-caixa').value == '') {
 
         alert('Insira valores válidos nos campos!')
         return
@@ -24,7 +24,7 @@ function RegistrarMovimentacao() {
     let data = document.getElementById('input-data').value
     let nomefuncionario = document.getElementById('input-nomefuncionario').value
     let descricao = document.getElementById('input-descricao').value
-    let quantia = document.getElementById('input-quantia').value
+    let valor = parseFloat(document.getElementById('input-valor').value)
     let status = document.getElementById('status-caixa').value
     let observacao = document.getElementById('input-observacao').value
 
@@ -40,6 +40,7 @@ function RegistrarMovimentacao() {
         }
     }
 
+    valor = valor.toFixed(2)
 
     data = data.replace("T", ' ')
 
@@ -81,7 +82,7 @@ function RegistrarMovimentacao() {
                     document.getElementById(`th${i}`).innerHTML = 'Descricão'
                     break
                 case 4:
-                    document.getElementById(`th${i}`).innerHTML = 'Quantia'
+                    document.getElementById(`th${i}`).innerHTML = 'Valor'
                     break
                 case 5:
                     document.getElementById(`th${i}`).innerHTML = 'Status'
@@ -112,7 +113,7 @@ function RegistrarMovimentacao() {
                 document.getElementById(`td${numero_itens}${i}`).innerHTML = descricao
                 break
             case 4:
-                document.getElementById(`td${numero_itens}${i}`).innerHTML = quantia
+                document.getElementById(`td${numero_itens}${i}`).innerHTML = valor
                 break
             case 5:
                 document.getElementById(`td${numero_itens}${i}`).innerHTML = status
