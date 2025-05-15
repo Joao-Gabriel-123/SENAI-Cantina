@@ -23,7 +23,6 @@ function AdicionarCarrinho(indice_quantidade, sinal_conta, preco_produto) {
     if (sinal_conta == '-') {
         if (quantidade != '0') {
             quantidade -= 1
-            console.log(quantidade)
 
         } else {
             return null
@@ -34,7 +33,6 @@ function AdicionarCarrinho(indice_quantidade, sinal_conta, preco_produto) {
 
     if (sinal_conta == '+') {
         quantidade += 1
-        console.log(quantidade)
     }
 
     document.getElementById(`quantidade${indice_quantidade}`).innerHTML = `Quantidade: ${quantidade}`
