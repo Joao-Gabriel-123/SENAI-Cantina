@@ -30,6 +30,12 @@ function RegistrarMovimentacao() {
 
     data = data.replace("T", ' ')
 
+    data_dia = data.substring(8, 10)
+    data_ano = data.substring(0, 4)
+
+    data = data.replace(data_dia, data_ano)
+    data = data.replace(data_ano, data_dia)
+
     let tabela = document.createElement('table')
     let tr_th = document.createElement('tr')
     let tr = document.createElement('tr')
