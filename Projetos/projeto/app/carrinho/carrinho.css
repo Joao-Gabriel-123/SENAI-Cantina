@@ -155,3 +155,46 @@ body{
     font-size: 1.1rem;
     text-align: center;
 }
+
+@media (max-width: 767px) {
+    .img-carrinho{
+        height: 150px;
+    }
+    .titulo-carrinho{
+        font-size: 0.7rem;
+    }
+    .preco-carrinho{
+        font-size: 0.7rem;
+    }
+    .quantidade{
+        font-size: 0.7rem;
+    }
+    .btn-carrinho{
+        font-size: 0.7rem;
+        padding: 0px;
+    }
+    .mensagem{
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .img-carrinho{
+        height: 200px;
+    }
+    .titulo-carrinho{
+        font-size: 1rem;
+    }
+    .preco-carrinho{
+        font-size: 1rem;
+    }
+    .quantidade{
+        font-size: 1rem;
+    }
+    .btn-carrinho{
+        font-size: 1rem;
+    }
+    .mensagem{
+        font-size: 1rem;
+    }
+}

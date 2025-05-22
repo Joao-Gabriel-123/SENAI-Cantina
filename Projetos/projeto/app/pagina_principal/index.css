@@ -122,3 +122,9 @@ body{
     border: red 1px solid;
 }
 
+@media (max-width: 767px) {
+
+    .linha_salgado{
+        flex-wrap: wrap;
+    }
+}

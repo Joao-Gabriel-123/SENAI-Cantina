@@ -1,5 +1,8 @@
-body{
+body {
     background-image: url(../../img/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
 }
 
 .container{
@@ -10,7 +13,7 @@ body{
     background: radial-gradient(rgb(255, 255, 255), rgb(192, 184, 184));
     border-radius: 25px;
     box-shadow: 10px 10px 10px grey;
-    width: 400px;
+    width: 350px;
     margin: 0px auto;
 }
 
