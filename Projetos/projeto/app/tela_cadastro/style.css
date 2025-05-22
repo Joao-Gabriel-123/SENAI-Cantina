@@ -231,19 +231,19 @@ input {
     }
 }
 
-@media (min-width: 1110px) and (max-width: 1149.98px) {
+@media (min-width: 1120px) and (max-width: 1149.98px) {
     .preco {
         width: 36%;
     }
 }
 
-@media (min-width: 1080px) and (max-width: 1109.98px) {
+@media (min-width: 1090px) and (max-width: 1119.98px) {
     .preco {
         width: 37%;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1079.98px) {
+@media (min-width: 992px) and (max-width: 1089.98px) {
     .preco {
         width: 38%;
     }
