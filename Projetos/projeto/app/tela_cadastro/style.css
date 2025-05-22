@@ -17,7 +17,7 @@ body {
     background-color: rgb(255, 255, 255);
     border: 1px black solid;
     border-radius: 30px;
-    width: 70%;
+    width: 80%;
     height: 100px;
 }
 
@@ -26,7 +26,7 @@ main {
     border-radius: 30px;
     background-color: rgb(197, 0, 0);
     border: rgb(32, 0, 0) solid;
-    padding: 1% 0%;
+    padding: 1% 5%;
     width: 50%;
     margin: 0px auto;
     margin-top: 30px;
@@ -116,18 +116,28 @@ input {
     text-align: center;
     border-radius: 5px;
     margin: 5px 5px;
+    width: 38%;
+}
+
+.opcoes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .btn-seta {
-    margin-left: 10px;
-    margin-top: -7px;
     height: 30px;
     width: 30px;
     border-radius: 100px;
 }
 
-.precos {
-    margin-left: 43px;
+#preco-custo {
+    margin-left: 40px;
+}
+
+.preco {
+    width: 32.7%;
 }
 
 .btn-cadastrar {
@@ -153,4 +163,88 @@ input {
     position: fixed;
     width: 100%;
     bottom: 0px;
+}
+
+@media (max-width: 500px) {
+
+    main {
+        width: 90%;
+    }
+
+    .preco {
+        width: 90%;
+        margin: 5px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    #preco-custo {
+        margin-left: 5px;
+        width: 90%;
+    }
+
+    #preco-venda {
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 500.01px) and (max-width: 991px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    #preco-custo {
+        margin-left: 5px;
+        width: 90%;
+    }
+
+    #preco-venda {
+        width: 90%;
+    }
+
+    .preco {
+        width: 90%;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 1180px) and (max-width: 1210px) {
+    .preco {
+        width: 34%;
+    }
+}
+
+@media (min-width: 1150px) and (max-width: 1179.98px) {
+    .preco {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1110px) and (max-width: 1149.98px) {
+    .preco {
+        width: 36%;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1109.98px) {
+    .preco {
+        width: 37%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1079.98px) {
+    .preco {
+        width: 38%;
+    }
 }

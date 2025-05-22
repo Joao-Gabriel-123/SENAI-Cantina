@@ -136,3 +136,14 @@ select option{
     color: black;
 }
 
+@media (max-width: 500px) {
+    td{
+        max-width: 40px;
+        font-size: 10px;
+    }
+    th{
+        max-width: 40px;
+        font-size: 7.5px;
+    }
+}
+
