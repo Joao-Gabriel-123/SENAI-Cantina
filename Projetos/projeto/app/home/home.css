@@ -205,3 +205,34 @@ p {
         margin-top: 15%;
     }
 }
+
+@media (min-width: 1100px) {
+
+    .principal {
+        margin-top: 7%;
+    }
+
+    h3 {
+        font-size: 6rem;
+        line-height: 100px;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .home-botoes {
+        padding: 4% 5%;
+    }
+
+    .home-botoes a {
+        padding: 4% 5%;
+        font-size: 1.285rem;
+    }
+
+    .img-cantina{
+        scale: 1.2;
+        margin-top: 10%;
+    }
+
+}
