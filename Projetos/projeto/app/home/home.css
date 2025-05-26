@@ -144,7 +144,6 @@ p {
     }
 }
 
-
 @media (min-width: 300px) and (max-width: 350px) {
 
 
@@ -206,7 +205,7 @@ p {
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
 
     .principal {
         margin-top: 7%;
