@@ -4,7 +4,7 @@ function VerificarLogin(){
 
     if (email == 'jorge@gmail.com' && senha == '1234'){
 
-        window.location.href = '../pagina_principal/index.html'
+        window.location.href = '../pagina_principal/home.html'
 
     } else{
 

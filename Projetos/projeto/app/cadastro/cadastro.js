@@ -12,7 +12,7 @@ function VerificarCadastro(){
             document.getElementById('mensagem').innerHTML = 'As senhas inseridas não correspondem!'
         
         } else{
-            window.location.href = '../home/home.html'
+            window.location.href = '../home/index.html'
 
         }
     }
