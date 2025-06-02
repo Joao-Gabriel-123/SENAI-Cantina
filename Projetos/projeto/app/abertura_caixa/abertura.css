@@ -93,10 +93,21 @@ body{
     border-radius: 7px;
 }
 
+.btn-seta:hover{
+    border-color: rgb(197, 0, 0);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .btn-seta{
     height: 30px;
     width: 30px;
     border-radius: 100px;
+}
+
+.input-movimentacao:hover{
+    border-color: rgb(197, 0, 0);
+    transition: 0.3s;
 }
 
 #tabela-movimentacao{

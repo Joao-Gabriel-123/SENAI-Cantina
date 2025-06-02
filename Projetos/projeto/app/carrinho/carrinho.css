@@ -129,6 +129,7 @@ body{
     background-color: white;
     color: rgb(197, 0, 0);
     border: rgb(197, 0, 0) 1px solid;
+    transition: 0.3s;
 }
 
 .btn-concluir-compra{
@@ -149,6 +150,7 @@ body{
     color: rgb(197, 0, 0);
     border: rgb(197, 0, 0) 1px solid;
     padding: 1.1%;
+    transition: 0.3s;
 }
 
 .mensagem{

@@ -25,6 +25,11 @@ input{
     font-size: 20px;
 }
 
+input:hover, input:focus{
+    border-color: rgb(220, 0, 0);
+    transition: 0.3s;
+}
+
 button{
     margin-top: 0px;
     width: 150px;
@@ -33,6 +38,13 @@ button{
     background-color: rgb(197, 0, 0);
     font-size: 20px;
     color: rgb(241, 241, 241);
+}
+
+button:hover{
+    background-color: white;
+    color: rgb(197, 0, 0);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .img-logo{
