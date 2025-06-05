@@ -43,13 +43,15 @@ main {
 
 .nav-senai li a {
     color: white;
-    margin-left: 10px;
+    margin-left: 10px;    
+    border-radius: 10px;
 }
 
 .nav-senai li a:hover {
     background-color: white;
     color: rgb(147, 0, 0);
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 .img-senai img {
@@ -61,8 +63,8 @@ main {
     height: 50px;
     background-image: url(../../img/perfil.png);
     background-size: cover;
+    cursor: pointer;
 }
-
 .menu {
     position: absolute;
     background-color: rgb(147, 0, 0);
@@ -88,6 +90,11 @@ main {
 .lista_menu li a {
     text-decoration: none;
     color: black;
+}
+
+.lista_menu li a:hover {
+    color: rgb(197, 0, 0);
+    transition: 0.3s;
 }
 
 .img-senai {

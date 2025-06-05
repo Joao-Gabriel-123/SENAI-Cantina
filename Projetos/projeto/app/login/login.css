@@ -31,9 +31,14 @@ input{
     font-size: 20px;
 }
 
-input:hover, input:focus{
+input:hover{
     border-color: rgb(220, 0, 0);
     transition: 0.3s;
+}
+
+input:focus{
+    border-color: rgb(197, 0, 0);
+    outline: none;
 }
 
 button{
@@ -51,6 +56,7 @@ button:hover{
     color: rgb(197, 0, 0);
     transition: 0.3s;
     cursor: pointer;
+    border-color: rgb(197, 0, 0);
 }
 
 .img-logo{

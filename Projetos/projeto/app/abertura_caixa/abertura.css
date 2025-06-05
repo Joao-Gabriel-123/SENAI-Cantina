@@ -19,26 +19,29 @@ body{
     align-items: center;
 }
 
-.nav-senai li a{
+.nav-senai li a {
     color: white;
-    margin-left: 10px;
+    margin-left: 10px;    
+    border-radius: 10px;
 }
 
-.nav-senai li a:hover{
+.nav-senai li a:hover {
     background-color: white;
     color: rgb(147, 0, 0);
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 .img-senai img{
     max-width: 150px;
 }
 
-.img-perfil{
+.img-perfil {
     width: 50px;
     height: 50px;
     background-image: url(../../img/perfil.png);
     background-size: cover;
+    cursor: pointer;
 }
 
 .rodape{
@@ -87,6 +90,11 @@ body{
     color: black;
 }
 
+.lista_menu li a:hover {
+    color: rgb(197, 0, 0);
+    transition: 0.3s;
+}
+
 .input-movimentacao{
     margin: 0px 10px;
     text-align: center;
@@ -108,6 +116,11 @@ body{
 .input-movimentacao:hover{
     border-color: rgb(197, 0, 0);
     transition: 0.3s;
+}
+
+.input-movimentacao:focus{
+    border-color: rgb(197, 0, 0);
+    outline: none;
 }
 
 #tabela-movimentacao{

@@ -5,7 +5,7 @@ body {
     text-align: center;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     margin: 0px auto;
 }
 
-input{
+input {
     text-align: center;
     width: 200px;
     height: 30px;
@@ -25,12 +25,17 @@ input{
     font-size: 20px;
 }
 
-input:hover, input:focus{
+input:hover {
     border-color: rgb(220, 0, 0);
     transition: 0.3s;
 }
 
-button{
+input:focus {
+    border-color: rgb(197, 0, 0);
+    outline: none;
+}
+
+button {
     margin-top: 0px;
     width: 150px;
     height: 30px;
@@ -40,26 +45,27 @@ button{
     color: rgb(241, 241, 241);
 }
 
-button:hover{
+button:hover {
     background-color: white;
     color: rgb(197, 0, 0);
     transition: 0.3s;
     cursor: pointer;
+    border-color: rgb(197, 0, 0);
 }
 
-.img-logo{
+.img-logo {
     width: 400px;
     border-radius: 140px;
     margin-bottom: 10px;
 }
 
-#mensagem{
+#mensagem {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 17px;
     color: rgb(212, 8, 8);
 }
 
-.rodape{
+.rodape {
     background-color: rgb(147, 0, 0);
     color: white;
     padding: 13px 0px;
@@ -70,7 +76,7 @@ button:hover{
     left: 0px;
 }
 
-.container{
+.container {
     position: relative;
     margin-bottom: 70px;
 }
