@@ -79,4 +79,15 @@ button:hover {
 .container {
     position: relative;
     margin-bottom: 70px;
+    animation: fadein 1s;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }

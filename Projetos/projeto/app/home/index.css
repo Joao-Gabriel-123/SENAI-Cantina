@@ -105,6 +105,7 @@ p {
 .principal {
     position: relative;
     margin-bottom: 100px;
+    animation: fadein 1s;
 }
 
 @keyframes text-shadow-titulo {
@@ -124,6 +125,16 @@ p {
 
     to {
         transform: scale(1.03);
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
     }
 }
 

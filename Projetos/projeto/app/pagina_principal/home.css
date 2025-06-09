@@ -57,6 +57,7 @@ body {
 .principal {
     position: relative;
     margin-bottom: 70px;
+    animation: fadein 1s;
 }
 
 .menu {
@@ -128,6 +129,16 @@ body {
 .btn_salgado:hover {
     color: red;
     border: red 1px solid;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }
 
 @media (max-width: 390px) {
